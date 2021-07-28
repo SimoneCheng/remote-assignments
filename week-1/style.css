@@ -70,42 +70,22 @@ input[type='button']:hover {
 }
 
 /* ====================== media query ====================== */
-@media screen and (max-width: 500px), 
+@media screen and (max-width: 800px), 
 screen and (max-width: 850px) and (orientation: landscape) {
     nav > div > ul { display: none; }
     nav { justify-content: space-between; }
 }
 
-@media screen and (min-width: 500px) and (max-width: 800px) {
-    nav > div > ul { display: none; }
-    nav { justify-content: space-between; }
-    #content-text { 
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;     
-    }
-    .row { display: flex; }
-    .container { flex: 1; }
-}
-
-@media screen and (min-width: 800px) and (max-width: 1200px) {
+@media screen and (min-width: 800px) {
     #drop-down-menu { display: none;}
     nav { justify-content: space-between; }
-    #content-text { 
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;     
-    }
-    .row { display: flex; }
-    .container { flex: 1; }
 }
 
 @media screen and (min-width: 1200px) {
-    #drop-down-menu { display: none;}
-    nav { justify-content: space-between; }
-    #content { width: 1200px; }
+    #content {width: 1200px;}
+}
+
+@media screen and (min-width: 500px) {
     #content-text { 
         width: 100%;
         display: flex;
