@@ -63,7 +63,8 @@ input[type='button']:hover {
 }
 
 /* ====================== media query ====================== */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px), screen and (max-width: 600px) and (orientation: landscape) 
+{
     #content-text {
         flex-direction: column;
     }
