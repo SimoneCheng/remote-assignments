@@ -1,7 +1,7 @@
 /* ====================== base element style ====================== */
 * {
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Noto Sans JP', sans-serif; 
 }
 
 #welcome-message, #content, #button {
@@ -44,7 +44,6 @@ h1 {
 .container {
     background-color: #0072E3;
     border-radius: 5px;
-    border: solid;
     margin: 20px;
     height: 50px;
 }
@@ -54,16 +53,32 @@ input {
     border: 0;
     border-radius: 0.25rem;
     height: 35px;
-    background-color: #f1c40f;
+    background-color: #FF95CA;
 }
 
 input[type='button']:hover {
-  background-color: orange;
+  background-color: #FF60AF;
   border: solid;
   transition: background-color 1s;
 }
 
 /* ====================== media query ====================== */
-@media screen {
+@media screen and (max-width: 500px) {
+    #content-text {
+        flex-direction: column;
+    }
     
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
 }
