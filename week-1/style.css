@@ -49,6 +49,7 @@ nav > div > ul > li, #drop-down-menu {
 #content {
     margin: 0 auto;
     width: 100%;
+    max-width: 1200px;
 }
 
 /* ====================== button base style ====================== */
@@ -77,12 +78,8 @@ screen and (max-width: 850px) and (orientation: landscape) {
 }
 
 @media screen and (min-width: 800px) {
-    #drop-down-menu { display: none;}
+    #drop-down-menu { display: none; }
     nav { justify-content: space-between; }
-}
-
-@media screen and (min-width: 1200px) {
-    #content {width: 1200px;}
 }
 
 @media screen and (min-width: 500px) {
