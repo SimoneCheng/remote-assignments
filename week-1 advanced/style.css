@@ -1,0 +1,217 @@
+/* ====================== base element style ====================== */
+* {
+    box-sizing: border-box;
+    font-family: Google Sans,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif;; 
+}
+
+/* ====================== navigation style ====================== */
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#brand_logo_and_name > img {
+    height: 36px;
+}
+
+#menu > ul {
+    display: flex;
+}
+
+/* ====================== welcome-message style ====================== */
+#welcome-message {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ====================== content style ====================== */
+#content-title > h2 {
+    color: #1a73e8;
+    margin: 12px 12px 4px 12px;
+}
+
+#content-picture > img {
+    height: 260px;
+}
+
+#content-picture {
+    text-align: center;
+}
+
+#content-text {
+    margin: 30px 12px;
+}
+
+#content > #button {
+    margin: 12px 4px 30px 12px;
+}
+
+#content > #button > input {
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 3px;
+    border-style: none;
+    padding: 6px 24px 6px 24px;
+}
+
+/* ====================== product style ====================== */
+#product-title {
+    text-align: center;
+}
+
+.icon-pic > img, #android {
+    height:64px;
+}
+
+.icon-pic {
+    margin: 20px;
+    text-align: center;
+}
+
+#android > img {
+    height: 36px;
+}
+
+#product > #button {
+    margin: 12px 4px 30px 12px;
+    text-align: center;
+}
+
+#product > #button > input {
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 3px;
+    border-style: none;
+    padding: 6px 24px 6px 24px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* ====================== others style ====================== */
+.others {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #E0E0E0;
+    margin: 10px 20px 20px 20px;
+}
+
+.others-pic {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://developers.google.com/site-assets/images/home/card-header-grid_720.png');
+    background-repeat:no-repeat;
+    background-size: auto 100%;
+    text-align: right;
+}
+
+.others-pic > img {
+    height: 160px;
+    width: 160px;
+}
+
+.others-text {
+    padding: 20px;
+}
+
+.others >  div > h2 {
+    color: #1a73e8;
+}
+
+.others > div > input {
+    background-color: white;
+    color: #1a73e8;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #E0E0E0;
+    padding: 6px 24px 6px 24px;
+} 
+
+/* ====================== news style ====================== */
+#news {
+    background-color: #E0E0E0;
+    padding: 20px;
+}
+
+#news > h2 {
+    text-align: center;
+}
+
+article {
+    background-color: white;
+    border-radius: 5px;
+    padding:20px;
+    margin: 20px;
+}
+
+article > h2 {
+    color: #1a73e8;
+}
+
+article > input {
+    background-color: white;
+    color: #1a73e8;
+    border-style: none;
+}
+
+article > div {
+    text-align: center;
+}
+
+article > div > img{
+    width: 128px;
+}
+
+/* ====================== developers-intro style ====================== */
+#short-intro {
+    text-align: center;
+}
+
+#short-intro > input {
+    background-color: white;
+    color: #1a73e8;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #E0E0E0;
+    padding: 6px 24px 6px 24px;
+    margin-bottom: 10px;
+}
+
+#intro-1, #intro-2, #intro-3, #intro-4 {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #E0E0E0;
+    margin: 10px 20px 20px 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#intro-1 > img, #intro-2 > img, #intro-3 > img, #intro-4 > img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+#intro-1 > input, #intro-2 > input, #intro-3 > input, #intro-4 > input {
+    background-color: white;
+    color: #1a73e8;
+    border-style: none;
+    padding: 6px 24px 6px 24px;
+}
+
+/* ====================== info style ====================== */
+#info > div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px; 
+    line-height: 40px;
+}
+
+#info > span {
+    font-size: 24px;
+}
