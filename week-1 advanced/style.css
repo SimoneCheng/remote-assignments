@@ -215,3 +215,24 @@ article > div > img{
 #info > span {
     font-size: 24px;
 }
+
+/* ====================== footer style ====================== */
+footer > div {
+    margin: 20px 12px 20px 12px;
+}
+
+footer > div > img {
+    width: 185px;
+}
+
+footer > div > ul > li {
+    margin: 15px 0;
+}
+
+footer > div > input {
+    color: white;
+    background-color: #1a73e8;
+    border-style: none;
+    border-radius: 5px;
+    padding: 6px 24px 6px 24px;
+}
