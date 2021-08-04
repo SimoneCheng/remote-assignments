@@ -40,7 +40,23 @@ function calculate(args) {
     }
     return result;
 }
-    // Try to call calculate function correctly
+
+// Try to call calculate function correctly
+//第一種方法，直接把東西丟進去函數裡面用
+calculate({ op: '+', n1: 5, n2: 10 })
+
+//第二種方法，先把東西存進一個類別，再把那個東西丟進函數裡面
+class Calculate {
+    constructor(op, n1, n2) {
+        this.op = op;
+        this.n1 = n1;
+        this.n2 = n2;
+    }
+}
+
+const operation1 = new Calculate('-', 5, 7);
+calculate(operation1);
+
 /*
 For example, if we have an add function like this:
 function add(args){
@@ -51,3 +67,58 @@ add({n1:3, n2:4}); // your first way
 You should apply constructor or class as another way to create a proper object.
 add(用類別或建構式產生的物件); // your another way
 */
+
+// ============================================================================================
+
+/*
+Assignment 3: Function, Array, and Object
+Complete the function below to calculate the average price of all the products.
+*/
+
+function avg(data) {
+    let sum = 0;
+    let result = 0;
+    for (let items in data.products) {
+        sum += data.products[items]['price'];
+    }
+    result =  sum / data.size;
+    return result;
+}
+
+avg({
+    size: 3,
+    products: [
+        {
+            name: "Product 1",
+            price: 100
+        },
+        {
+            name: "Product 2",
+            price: 700
+        },
+        {
+            name: "Product 3",
+            price: 250
+        }
+    ]
+}); // show the average price of all products
+
+// ============================================================================================
+
+/*
+Assignment 5: Algorithm Practice (Advanced Optional)
+Given an array of integers, return indices of the two numbers such that they add up to a
+specific target. You may assume that each input would have exactly one solution, and you
+may not use the same element twice.
+*/
+
+function twoSum(nums, target) {
+    // your code here
+} /*
+    For example:
+    twoSum([2, 7, 11, 15], 9);
+    Should returns:
+    [0, 1]
+    Because:
+    nums[0]+nums[1] is 9
+    */
