@@ -30,7 +30,7 @@ nav {
 /* ====================== content style ====================== */
 #content-title > h2 {
     color: #1a73e8;
-    margin: 12px 12px 4px 12px;
+    margin: 60px 12px 4px 12px;
 }
 
 #content-picture > img {
@@ -39,22 +39,24 @@ nav {
 
 #content-picture {
     text-align: center;
+    margin: 60px 30px;
 }
 
 #content-text {
     margin: 30px 12px;
+    line-height: 25px;
 }
 
-#content > #button {
+#content > div > #button {
     margin: 12px 4px 30px 12px;
 }
 
-#content > #button > input {
+#content > div > #button > input {
     background-color: #1a73e8;
     color: white;
     border-radius: 3px;
     border-style: none;
-    padding: 6px 24px 6px 24px;
+    padding: 10px 24px 10px 24px;
 }
 
 /* ====================== product style ====================== */
@@ -85,21 +87,20 @@ nav {
     color: white;
     border-radius: 3px;
     border-style: none;
-    padding: 6px 24px 6px 24px;
-}
-
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    padding: 10px 24px 10px 24px;
 }
 
 /* ====================== others style ====================== */
+#others {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 .others {
     border-radius: 5px;
     border-style: solid;
     border-color: #E0E0E0;
-    margin: 10px 20px 20px 20px;
+    margin: 10px 20px 20px 20px;    
 }
 
 .others-pic {
@@ -130,7 +131,7 @@ nav {
     border-radius: 3px;
     border-style: solid;
     border-color: #E0E0E0;
-    padding: 6px 24px 6px 24px;
+    padding: 10px 24px 10px 24px;
 } 
 
 /* ====================== news style ====================== */
@@ -164,11 +165,20 @@ article > div {
     text-align: center;
 }
 
+article > p {
+    line-height: 25px;
+}
+
 article > div > img{
     width: 128px;
 }
 
 /* ====================== developers-intro style ====================== */
+.intro-row {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 #short-intro {
     text-align: center;
 }
@@ -179,7 +189,7 @@ article > div > img{
     border-radius: 3px;
     border-style: solid;
     border-color: #E0E0E0;
-    padding: 6px 24px 6px 24px;
+    padding: 10px 24px 10px 24px;
     margin-bottom: 10px;
 }
 
@@ -201,10 +211,14 @@ article > div > img{
     background-color: white;
     color: #1a73e8;
     border-style: none;
-    padding: 6px 24px 6px 24px;
+    padding: 10px 24px 10px 24px;
 }
 
 /* ====================== info style ====================== */
+#info {
+    margin: 0 12px;
+}
+
 #info > div {
     display: flex;
     flex-direction: column;
@@ -226,7 +240,7 @@ footer > div > img {
 }
 
 footer > div > ul > li {
-    margin: 15px 0;
+    margin: 15px 15px;
 }
 
 footer > div > input {
@@ -234,5 +248,5 @@ footer > div > input {
     background-color: #1a73e8;
     border-style: none;
     border-radius: 5px;
-    padding: 6px 24px 6px 24px;
+    padding: 10px 24px 10px 24px;
 }

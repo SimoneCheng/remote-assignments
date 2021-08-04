@@ -1,1 +1,78 @@
 /* ====================== media query ====================== */
+@media screen and (min-width: 490px) {
+    .intro-col {
+        display: flex;
+        justify-content: center;
+    }
+    #intro-1, #intro-2, #intro-3, #intro-4 {
+        flex: 1;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #content {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #icon {
+        display: flex;
+        flex-direction: column;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex: 1;
+    }
+    .col {
+        display: flex;
+    }
+    #others {
+        display: flex;
+    }
+    .others {
+        flex: 1;
+    }
+    .col-b {
+        display: flex;
+    }
+    .col-b > article {
+        flex: 1;
+        align-items: stretch;
+    }
+    #info {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer1, .footer1 > div > ul {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .col-a {
+        display: flex;
+        flex-direction: column;
+    }
+    .col-b {
+        display: flex;
+        flex-direction: row;
+    }
+    #news > div {
+        display: flex;
+        flex: 1;
+    }
+    .intro-row {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
