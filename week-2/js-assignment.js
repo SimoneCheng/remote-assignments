@@ -81,7 +81,7 @@ function avg(data) {
     for (let items in data.products) {
         sum += data.products[items]['price'];
     }
-    result =  sum / data.size;
+    result = sum / data.size;
     return result;
 }
 
@@ -113,12 +113,23 @@ may not use the same element twice.
 */
 
 function twoSum(nums, target) {
-    // your code here
-} /*
-    For example:
-    twoSum([2, 7, 11, 15], 9);
-    Should returns:
-    [0, 1]
-    Because:
-    nums[0]+nums[1] is 9
-    */
+    for (let i = 0; i < nums.length; i++) {
+        for (let j = i + 1; j < nums.length; j++) {
+            if (nums[i] + nums[j] === target) {
+                return [i, j];
+            }
+        }
+    }
+} 
+
+twoSum([2, 7, 11, 15], 13);
+twoSum([2, 7, 11, 15], 9);
+
+/*
+For example:
+twoSum([2, 7, 11, 15], 9);
+Should returns:
+[0, 1]
+Because:
+nums[0]+nums[1] is 9
+*/

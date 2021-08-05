@@ -4,7 +4,7 @@
 DEMO：https://simonecheng.github.io/remote-assignments/week-1/
 
 ## week-1 advanced
-DEMO：https://simonecheng.github.io/remote-assignments/week-1%20advanced/
+DEMO：https://simonecheng.github.io/remote-assignments/week-1%20advanced/  
 待修正，還有一些應該修改的地方：
 - navigation還沒做RWD跟調版面
 - flexbox裡面learn more和view profile這兩個咚咚無法置底QAQ
