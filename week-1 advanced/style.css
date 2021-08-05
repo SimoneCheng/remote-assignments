@@ -39,7 +39,7 @@ nav {
 
 #content-picture {
     text-align: center;
-    margin: 60px 30px;
+    margin: 60px auto;
 }
 
 #content-text {
@@ -216,13 +216,12 @@ article > div > img{
 
 /* ====================== info style ====================== */
 #info {
-    margin: 0 12px;
+    margin: 0 20px;
 }
 
 #info > div {
     display: flex;
     flex-direction: column;
-    margin-left: 12px; 
     line-height: 40px;
 }
 
@@ -231,8 +230,16 @@ article > div > img{
 }
 
 /* ====================== footer style ====================== */
-footer > div {
-    margin: 20px 12px 20px 12px;
+.footer1 > div {
+    margin: 5px 12px 5px 12px;
+}
+
+.footer2 > div {
+    margin: 5px 12px;
+}
+
+.footer2-1 > div {
+    margin: 15px 12px 15px 0;
 }
 
 footer > div > img {
@@ -243,7 +250,7 @@ footer > div > ul > li {
     margin: 15px 15px;
 }
 
-footer > div > input {
+footer > div > div > input {
     color: white;
     background-color: #1a73e8;
     border-style: none;

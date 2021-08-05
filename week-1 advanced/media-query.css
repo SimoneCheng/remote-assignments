@@ -38,8 +38,11 @@
     }
     .col-b > article {
         flex: 1;
-        align-items: stretch;
     }
+    .col-b > article > input {
+        align-self: flex-end;
+        margin-top: auto;
+    } /* 想要把learn more置底在flexbox items，但是失敗了 */
     #info {
         display: flex;
         justify-content: space-between;
@@ -48,25 +51,33 @@
         display: flex;
         align-items: center;
     }
+    .footer2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer2-1 {
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 840px) {
     .col-a {
-        display: flex;
-        flex-direction: column;
+       display: flex;
     }
     .col-b {
         display: flex;
-        flex-direction: row;
-    }
-    #news > div {
-        display: flex;
+        align-items: stretch;
         flex: 1;
+    }
+    .col-b > article > input {
+        margin-top: auto;
     }
     .intro-row {
         display: flex;
+        justify-content: center;
     }
-
 }
 
 @media screen and (max-width: 600px) {
