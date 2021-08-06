@@ -14,4 +14,6 @@ DEMO：https://simonecheng.github.io/remote-assignments/week-1%20advanced/
 
 ## week-2
 https://skyyen999.gitbooks.io/-leetcode-with-javascript/content/questions/1md.html
+https://github.com/Deltaty-Code/Humburger-Menu
+https://ithelp.ithome.com.tw/articles/10203995
 DEMO：
