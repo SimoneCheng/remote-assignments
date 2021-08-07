@@ -1,4 +1,5 @@
-/* ====================== media query ====================== */
+/* ====================== media query for all ecxcept nav ====================== */
+
 @media screen and (min-width: 490px) {
     .intro-col {
         display: flex;
@@ -36,18 +37,19 @@
     .col-b {
         display: flex;
     }
-    .col-b > article {
+    .col-b>article {
         flex: 1;
     }
-    .col-b > article > input {
+    .col-b>article>input {
         align-self: flex-end;
         margin-top: auto;
-    } /* 想要把learn more置底在flexbox items，但是失敗了 */
+    }
+    /* 想要把learn more置底在flexbox items，但是失敗了 */
     #info {
         display: flex;
         justify-content: space-between;
     }
-    .footer1, .footer1 > div > ul {
+    .footer1, .footer1>div>ul {
         display: flex;
         align-items: center;
     }
@@ -64,14 +66,14 @@
 
 @media screen and (min-width: 840px) {
     .col-a {
-       display: flex;
+        display: flex;
     }
     .col-b {
         display: flex;
         align-items: stretch;
         flex: 1;
     }
-    .col-b > article > input {
+    .col-b>article>input {
         margin-top: auto;
     }
     .intro-row {
@@ -86,4 +88,58 @@
         align-items: center;
         justify-content: space-around;
     }
+}
+
+/* ====================== media query for nav ====================== */
+
+@media screen and (max-width: 800px) {
+    /* nav>input, #menu {
+        display: none;
+    }
+    #burger:checked+#menu {
+        display: block;
+    } */
+}
+
+nav>input {
+    display: none;
+}
+
+#burger:checked~#menu {
+    max-height: 100vh;
+}
+
+#menu {
+    max-height: 0vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 250px;
+    transition: 0.5s linear;
+}
+
+#menu>ul>li {
+    margin: 10px 50px 30px 20px;
+}
+#menu>ul {
+    text-align: left;
+}
+.close-menu {   
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.open-menu {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+#ul-1 {
+    display: flex;
+}
+
+#ul-1>img, #ul-1>label {
+    padding-right: 20px;
 }

@@ -14,21 +14,29 @@
 <body>
     <header>
         <nav>
-            <div id="drop-down-menu">
-                <label for="drop-menu">&#9776;</label>
-            </div>
+            <label for="burger" class="open-menu">&#9776;</label>
+            <input type="checkbox" id="burger">
             <div id="brand_logo_and_name">
                 <img src="images/lockup.svg">
             </div>
             <div id="menu">
                 <ul>
-                    <li>item 1</li>
-                    <li>item 2</li>
-                    <li>item 3</li>
+                    <li id="ul-1">
+                        <label for="burger" class="close-menu">&times;</label>
+                        <img src="images/lockup.svg">
+                    </li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Learn</a></li>
+                    <li><a href="#">Developer Communities</a></li>
+                    <li><a href="#">Developer Profile</a></li>
+                    <li><a href="#">Blog</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
+    <div id="fill-empty"></div>
 
     <section id="welcome-message">
         <p>Google is committed to advancing racial equity for Black communities. <a

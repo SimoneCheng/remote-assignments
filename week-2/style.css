@@ -76,13 +76,10 @@ input[type='button']:hover {
 
 @media screen and (max-width: 800px), screen and (max-width: 850px) and (orientation: landscape) {
     /* 做漢堡選單 */
-    nav>input {
+    nav>input, #menu {
         display: none;
     }
-    #menu {
-        display: none;
-    }
-    #burger:checked+#menu {
+    #burger:checked~#menu {
         display: block;
     }
     #menu {
