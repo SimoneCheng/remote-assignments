@@ -20,9 +20,9 @@ DEMO：https://simonecheng.github.io/remote-assignments/week-2/
 
 ### 參考資源
 
-- LEETCODE JS twoSum()的題目：
+- LEETCODE JS twoSum()的題目：  
 https://skyyen999.gitbooks.io/-leetcode-with-javascript/content/questions/1md.html
 
-- 漢堡選單：
-https://github.com/Deltaty-Code/Humburger-Menu
+- 漢堡選單：  
+https://github.com/Deltaty-Code/Humburger-Menu  
 https://ithelp.ithome.com.tw/articles/10203995
