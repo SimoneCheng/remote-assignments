@@ -5,16 +5,13 @@ Complete the function below to find the max number of the passing array of numbe
 */
 
 function max(numbers) {
-    for (i = 0; i < numbers.length; i++) {
-        for (j = i + 1; j < numbers.length; j++) {
-            if (numbers[j] < numbers[i]) {
-                var x = numbers[i];
-                numbers[i] = numbers[j];
-                numbers[j] = x;
-            }
-        }
+    let result = numbers[0];
+    for (i = 1; i < numbers.length; i++) {
+        if (numbers[i] > result) {
+            result = numbers[i];
+        };
     }
-    return numbers[(numbers.length) - 1];
+    return result;
 }
 
 max([1, 2, 4, 5]); // result to 5
@@ -120,7 +117,7 @@ function twoSum(nums, target) {
             }
         }
     }
-} 
+}
 
 twoSum([2, 7, 11, 15], 13);
 twoSum([2, 7, 11, 15], 9);
