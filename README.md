@@ -1,4 +1,4 @@
-# remote-assignments
+# Remote-Assignments
 
 ## Week-1
 
@@ -26,3 +26,12 @@ https://skyyen999.gitbooks.io/-leetcode-with-javascript/content/questions/1md.ht
 - 漢堡選單：  
 https://github.com/Deltaty-Code/Humburger-Menu  
 https://ithelp.ithome.com.tw/articles/10203995
+
+## week-3
+
+### 參考資源
+
+- https://medium.com/pierceshih/筆記-如何使用-node-js-建立一個本機伺服器-30b8d91c3ec1
+- https://developer.mozilla.org/zh-TW/docs/Learn/Server-side/Express_Nodejs/Introduction
+- https://hackmd.io/@Heidi-Liu/note-be201-express-node
+- https://www.nodebeginner.org/index-zh-tw.html
