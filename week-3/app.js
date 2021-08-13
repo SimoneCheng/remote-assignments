@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 
+app.use(express.static('public'));
+
 // assignment 1: your first web server
 app.get('/', (req, res) => {
     res.send('<h1>Welcome to localhost:3000</h1>');
