@@ -29,11 +29,19 @@ https://ithelp.ithome.com.tw/articles/10203995
 
 ## week-3
 
-### 環境
-- nvm install --lts
-- nvm install node
-- npm install express
-- npm install nodemon
+### 建立一個簡單的本機伺服器
+
+可連線至：
+- http://localhost:3000
+- http://localhost:3000/getData
+- http://localhost:3000/sum.html
+
+### 所需環境
+
+- `nvm install --lts`
+- `nvm install node`
+- `npm install express`
+- `npm install nodemon`
 
 ### 參考資源
 
