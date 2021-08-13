@@ -29,6 +29,12 @@ https://ithelp.ithome.com.tw/articles/10203995
 
 ## week-3
 
+### 環境
+- nvm install --lts
+- nvm install node
+- npm install express
+- npm install nodemon
+
 ### 參考資源
 
 - https://medium.com/pierceshih/筆記-如何使用-node-js-建立一個本機伺服器-30b8d91c3ec1
