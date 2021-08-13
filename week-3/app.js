@@ -6,11 +6,11 @@ app.use(express.static('public'));
 
 // assignment 1: your first web server
 app.get('/', (req, res) => {
-    res.send('<h1>Welcome to localhost:3000</h1>');
+    res.send('<h1>Welcome to localhost:3000</h1><p>你目前可以連線到</p><ul><li>localhost:3000/getData</li><li>localhost:3000/sum.html</li></ul>');
 });
 
 // assignment 2: build backend API for front-end
-app.get('/getData/', (req, res) => {
+app.get('/getData', (req, res) => {
     let result;
     if (!req.query.number) {
         result = "<h1>Lack of Parameter</h1>";
