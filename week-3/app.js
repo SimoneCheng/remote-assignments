@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 
+// assignment 3: connect to backend API by AJAX
 app.use(express.static('public'));
 
 // assignment 1: your first web server

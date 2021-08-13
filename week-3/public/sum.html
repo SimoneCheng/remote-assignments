@@ -10,6 +10,21 @@
 
 <body>
     <h1>Welcome to sum.html</h1>
-
-
+    <div id="ajax"></div>
 </body>
+
+<script>
+    // assignment 3: connect to backend API by AJAX
+    // 發出對http://localhost:3000/getData?number=10的請求，得到相對應的response
+    let ajax = new XMLHttpRequest();
+    ajax.onreadystatechange = function () {
+        if (ajax.readyState === 4) {
+            document.getElementById('ajax').innerHTML = ajax.responseText;
+        }
+    }
+    ajax.open('GET','http://localhost:3000/getData?number=10');
+    ajax.send();
+    //
+</script>
+
+</html>
