@@ -15,11 +15,12 @@
         <span id="ajax"></span>
     </div>
     <hr>
-    <form name="form" id="form">
+    <form name="form" id="form" method="GET" action="http://localhost:3000/getData" onsubmit="return false">
         <p>輸入一個數字，然後按「送出」，幫你算從1加到該數字的和。</p>
         <p>特別提醒：不可以按鍵盤的Enter喔！按了不會跑出東西來！</p>
+        <p>新增功能：現在可以按Enter了！</p>
         <input type="number" name="number" id="number" placeholder="輸入一個數字...">
-        <input type='button' value='送出' data-action="submit">
+        <input type='submit' value='送出' data-action="submit">
     </form>
     <p>輸出的總和如下↓</p>
     <div id="ajax2"></div>
@@ -41,21 +42,26 @@
     /* Write a simple user interface to let users enter a number and get a result from the
      server. (For a simple example, a text input and a button.) */
     let ajax2 = new XMLHttpRequest();
+    let ajax2_text = document.getElementById('ajax2');
     const submitBtn = document.querySelector('[data-action="submit"]');
-    const keyEnter = document.querySelector("#number");
-    submitBtn.addEventListener("click", sum);
+    const input = document.querySelector("#number");
+
+    submitBtn.addEventListener("click", () => {
+        sum();
+        input.value =　"";
+    });
+
     function sum() {
-        const form = document.forms['form'];
-        const number_input = form.elements.number.value;
+        const number_input = input.value;
         ajax2.onreadystatechange = function () {
             if (ajax.readyState === 4) {
-                document.getElementById('ajax2').innerHTML = ajax2.responseText;
+                ajax2_text.innerHTML = ajax2.responseText;
             }
         }
         ajax2.open('GET', `http://localhost:3000/getData?number=${number_input}`);
         ajax2.send();
-        form.elements.number.value = "";
     }
+ 
 </script>
 
 </html>
