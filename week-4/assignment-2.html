@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="week 4 assignment 2">
+    <link rel="stylesheet" href="assignment-2.css">
+    <title>week-4</title>
+</head>
+
+<body>
+    <h1 class="title">Top Products</h1>
+    <div id="products">
+
+    </div>
+</body>
+
+<script>
+    function ajax(src, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState === 4) {
+                var data = JSON.parse(xhr.responseText)
+                callback(data);
+            }
+        }
+        xhr.open('GET', src);
+        xhr.send();
+    }
+
+    function render(data) {
+        const divContainer = document.getElementById('products');
+
+        data.forEach(e => {
+            let block = document.createElement('div');
+            let name = document.createElement('h3');
+            let price = document.createElement('p');
+            let description = document.createElement('p');
+
+            let nameTxt = document.createTextNode(e.name);
+            let priceTxt = document.createTextNode('$' + e.price);
+            let descriptionTxt = document.createTextNode(e.description);
+
+            block.classList.add('product');
+            name.classList.add('name');
+            price.classList.add('price');
+            description.classList.add('description');
+
+            name.appendChild(nameTxt);
+            price.appendChild(priceTxt);
+            description.appendChild(descriptionTxt);
+
+            block.appendChild(name);
+            block.appendChild(price);
+            block.appendChild(description);
+
+            divContainer.appendChild(block);
+        });
+    }
+
+    ajax("http://13.230.176.178:4000/api/1.0/remote-w4-data", function(response) {
+        render(response);
+    }); // you should get product information in JSON format and render data in the page
+</script>
+
+</html>
