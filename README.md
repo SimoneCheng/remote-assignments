@@ -4,7 +4,7 @@
 
 DEMO：https://simonecheng.github.io/remote-assignments/week-1/
 
-## week-1 advanced
+## Week-1 advanced
 
 DEMO：https://simonecheng.github.io/remote-assignments/week-1-advanced/  
 
@@ -14,7 +14,7 @@ DEMO：https://simonecheng.github.io/remote-assignments/week-1-advanced/
 - footer的下拉式選單還沒做成美美的樣式
 - a連結的樣式還是用默認的，還沒改
 
-## week-2
+## Week-2
 
 DEMO：https://simonecheng.github.io/remote-assignments/week-2/
 
@@ -27,7 +27,7 @@ https://skyyen999.gitbooks.io/-leetcode-with-javascript/content/questions/1md.ht
 https://github.com/Deltaty-Code/Humburger-Menu  
 https://ithelp.ithome.com.tw/articles/10203995
 
-## week-3
+## Week-3
 
 ### 建立一個簡單的本機伺服器
 
@@ -35,13 +35,14 @@ https://ithelp.ithome.com.tw/articles/10203995
 - http://localhost:3000
 - http://localhost:3000/getData
 - http://localhost:3000/sum.html
+- http://localhost:3000/myName
 
-### 所需環境
+### 所需套件
 
-- `nvm install --lts`
-- `nvm install node`
-- `npm install express`
-- `npm install nodemon`
+- `node`
+- `express`
+- `nodemon`
+- `cookie-parser`
 
 ### 參考資源
 
@@ -49,3 +50,14 @@ https://ithelp.ithome.com.tw/articles/10203995
 - https://developer.mozilla.org/zh-TW/docs/Learn/Server-side/Express_Nodejs/Introduction
 - https://hackmd.io/@Heidi-Liu/note-be201-express-node
 - https://www.nodebeginner.org/index-zh-tw.html
+
+## Week-4
+
+### assignment 2
+DEMO：https://simonecheng.github.io/remote-assignments/week-4/assignment-2.html
+
+### assignment 3
+DEMO：https://simonecheng.github.io/remote-assignments/week-4/assignment-3/
+
+### 參考資源
+- https://askie.today/react-setting-cdn-and-creatreactapp/
