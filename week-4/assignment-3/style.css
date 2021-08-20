@@ -1,0 +1,140 @@
+/* ====================== base element style ====================== */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#welcome-message, #content, #button, #content-hide {
+    text-align: center;
+}
+
+/* ====================== navigation base style ====================== */
+
+nav {
+    background-color: #E0E0E0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#brand_logo_and_name {
+    margin-left: 20px;
+}
+
+nav>div>ul>li {
+    margin: 0 20px 0 0;
+}
+
+/* ====================== welcome-message section base style ====================== */
+
+#welcome-message {
+    background-color: #84C1FF;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ====================== content section base style ====================== */
+
+.container {
+    background-color: #0072E3;
+    border-radius: 5px;
+    margin: 5px;
+    height: 100px;
+}
+
+#content, #content-hide{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* ====================== button base style ====================== */
+
+#button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    border: 0;
+    border-radius: 0.25rem;
+    height: 35px;
+    background-color: #FF95CA;
+}
+
+input[type='button']:hover {
+    background-color: #FF60AF;
+    border: solid;
+    transition: background-color 1s;
+}
+
+/* ====================== media query ====================== */
+
+@media screen and (max-width: 800px), screen and (max-width: 850px) and (orientation: landscape) {
+    /* 做漢堡選單 */
+    nav>input, #menu {
+        display: none;
+    }
+    #burger:checked~#menu {
+        display: block;
+    }
+    #menu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #E0E0E0;
+        border-style: dotted;
+    }
+    #menu>ul>li {
+        margin: 3rem 5rem 3rem 1rem;
+    }
+    #menu>ul {
+        text-align: left;
+    }
+    .close-menu {
+        position: absolute;
+        right: 1rem;
+        top: 0.5rem;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+    .open-menu {
+        font-size: 1.5rem;
+        padding-right: 1rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .open-menu, .close-menu, nav>input {
+        display: none;
+    }
+    #menu>ul {
+        display: flex;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #content-text, #content-hide {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .row {
+        display: flex;
+    }
+    .container {
+        flex: 1;
+    }
+}
