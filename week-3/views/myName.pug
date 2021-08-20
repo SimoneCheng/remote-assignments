@@ -8,6 +8,6 @@ html(lang='zh-Hant-TW')
                 input(type='text', name='username' placeholder='輸入使用者名稱...')
                 input(type='submit' value='送出')
         else
-            h2 Hello,  #{name}
+            h2 Hello, #{name}
             form(action='/goodbye', method='POST')
                 input(type='submit' value='Goodbye') 
