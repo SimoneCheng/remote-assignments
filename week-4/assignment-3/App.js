@@ -83,7 +83,7 @@ class Button extends React.Component {
 //Content 5 to 8 Component
 function ContentHidden() {
     return (
-        <section id="content-hide" style="display: none">
+        <section id="content-hide" style={{display:'none'}}>
             <div className="row">
                 <div className="container">Content Box 5</div>
                 <div className="container">Content Box 6</div>
