@@ -1,0 +1,13 @@
+doctype html 
+html(lang='zh-Hant-TW')
+    head 
+        title MyName Page 
+    body
+        if(!name)
+            form(action='/trackName', method='GET')
+                input(type='text', name='username' placeholder='輸入使用者名稱...')
+                input(type='submit' value='送出')
+        else
+            h2 Hello,  #{name}
+            form(action='/goodbye', method='POST')
+                input(type='submit' value='Goodbye') 
