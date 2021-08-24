@@ -62,7 +62,7 @@ DEMO：https://simonecheng.github.io/remote-assignments/week-4/assignment-3/
 ### assignment 3-2
 重新寫一次assignment 3，這次控制 Call to Action 的地方有用到 React 當中很重要的 state 概念 。 
 
-DEMO：https://simonecheng.github.io/remote-assignments/week-4/assignment-3-2/
+DEMO：https://simonecheng.github.io/remote-assignments/week-4/assignment-3-2/index.html
 
 ### 參考資源
 - https://askie.today/react-setting-cdn-and-creatreactapp/
